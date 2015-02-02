@@ -1,0 +1,13 @@
+
+
+
+<h1>Did you mean?  </h1>
+
+<ul>
+     
+<% @array.each do |movie| %>
+    <li><a href="result/<%= movie['Title'] %>"><%= movie['Title'] %></a></li>
+      <% end %>
+
+</ul>
+

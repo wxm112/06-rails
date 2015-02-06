@@ -8,10 +8,15 @@
 </head>
 <body>
 
+
+
+<h1>Welcome <%= @current_user.try(:name) %></h1>
+
+
+
 <nav>
     <ul>
-        <li><%= link_to('Home', root_path) %></li>
-        <li><%=link_to('Sign up', new_user_path)%></li>
+        <%== nav_menu %>
     </ul>
 </nav>
 

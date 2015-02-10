@@ -1,7 +1,7 @@
 <h2><%= @ocean.name %></h2>
-<h2>Area : <%= @ocean.area %></h2>
-<h2>Average depth : <%= @ocean.average_depth %></h2>
-<h2>Deepest depth : <%= @ocean.deepest_depth %></h2>
+<h2>Area : <%= number_to_human(@ocean.area) %></h2>
+<h2>Average depth : <%= number_to_human(@ocean.average_depth) %></h2>
+<h2>Deepest depth : <%= number_to_human(@ocean.deepest_depth) %></h2>
 
 <%= image_tag @ocean.image %>
 
